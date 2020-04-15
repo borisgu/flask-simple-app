@@ -1,0 +1,14 @@
+<body>
+    <h1>Type text to Insert:</h1>
+    <form action="/" method="POST" autocomplete="on">
+        <td><input name="text" placeholder="Your Text" size="20" /></td>
+        <td><button type="submit">Submit</button></td>
+    </form>
+
+	<h1>Type text to search:</h1>
+	<form action="/search" method="GET" autocomplete="on">
+	    <td><input type="text" name="search_text" placeholder="Your Text" size="20" /></td>
+	    <td><button type="submit">Search</button></td>
+    </form>
+    {{table}}
+</body>
