@@ -73,5 +73,5 @@ Now that your services are configured and running, you can test your application
 
 
 ### TODO
-Refine the search output
-Create init script for MongoDB to create users as part of `docker-compose up` process.
+- Refine the search output
+- Create init script for MongoDB to create users as part of `docker-compose up` process.
