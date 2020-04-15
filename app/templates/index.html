@@ -10,5 +10,11 @@
 	    <td><input type="text" name="search_text" placeholder="Your Text" size="20" /></td>
 	    <td><button type="submit">Search</button></td>
     </form>
-    {{table}}
+    <table>
+        {% for item in data %}
+        <TR>
+           <TD class="c1">{{item}}</TD>
+        </TR>
+        {% endfor %}
+        </table>
 </body>

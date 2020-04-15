@@ -28,12 +28,11 @@ def search():
     text_to_search = request.values.get('search_text')
     regex_query = { "name" : {"$regex" : text_to_search} }
     check_db = mongo.db.coll.find(regex_query)
-    print (check_db)
     x   = []
     for i in check_db:
         x.append(i["name"])
 
-    return render_template('index.html', table=x)
+    return render_template('index.html', data=x)
 
 if __name__ == "__main__":
     ENVIRONMENT_DEBUG = os.environ.get("APP_DEBUG", True)
