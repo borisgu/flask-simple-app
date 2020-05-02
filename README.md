@@ -21,7 +21,7 @@ $ docker-compose up -d
 
 It will pull all the relevant images, configure the needed networks, volumes and bring up all the services.
 
-To change the images version edit the `.env` file and set it to the wanted
+To change the images version edit the `.env` file and set it to the wanted version.
 
 #### Creating a User for Your MongoDB Database
 The docker-compose does not create the user that will be used by the flask app.
